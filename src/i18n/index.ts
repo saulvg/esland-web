@@ -2,8 +2,8 @@ import spanish from "./es.json";
 import english from "./en.json";
 
 const LANGUAGES = {
-  ENGLISH: "en",
   SPANISH: "es",
+  ENGLISH: "en",
 };
 export const getI18N = ({
   currentLocale = "es",
