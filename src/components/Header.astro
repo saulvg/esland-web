@@ -1,4 +1,5 @@
 ---
+import Button from "./Button.astro";
 import Logo from "./Logo.astro";
 ---
 
@@ -10,17 +11,14 @@ import Logo from "./Logo.astro";
   <nav>
     <ul class="flex gap-8">
       <li class="">
-        <a href="#" class="hover:underline underline-offset-8">INFO</a>
+        <a href="/info" class="hover:underline underline-offset-8">INFO</a>
       </li>
       <li>
-        <a href="#" class="hover:underline underline-offset-8">ARCHIVO</a>
+        <a href="/archivo" class="hover:underline underline-offset-8">ARCHIVO</a
+        >
       </li>
     </ul>
   </nav>
 
-  <a
-    href="#"
-    class="border rounded-full hover:bg-white hover:text-black duration-300 block p-4 uppercase"
-    >Eslando: El documental</a
-  >
+  <Button url="#">Eslando: El documental</Button>
 </header>

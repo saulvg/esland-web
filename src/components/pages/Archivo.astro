@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import HeroContainer from "../HeroContainer.astro";
+
+import { getI18N } from "../../i18n";
+import Button from "../Button.astro";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title="Archivo" description="Archivo">
+  <HeroContainer img="/archivo.webp">
+    <h1 class="text-3xl mb-20 font-medium">EDICIONES ANTERIORES</h1>
+    <Button url="https://www.google.com">Revive la ultima gala</Button>
+  </HeroContainer>
+</Layout>

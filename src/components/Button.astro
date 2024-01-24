@@ -1,0 +1,36 @@
+---
+const { url, onClick, className, target, rest } = Astro.props;
+import styles from "./styles/Button.module.css";
+
+interface Props {
+  onClick?: (e: MouseEvent) => any;
+  className?: string;
+  target?: string;
+  url: string;
+  rest?: any;
+}
+---
+
+<a
+  href={url}
+  target={`${target ?? "_blank"}`}
+  rel="noopener noreferrer"
+  onClick={onClick}
+  class={`
+  w-fit
+  lg:text-2xl
+  font-medium
+  no-underline
+  px-5
+    py-3
+    border
+    border-solid
+    border-white
+    rounded-full
+    uppercase
+    ${styles.button} 
+    ${className ?? ""}`}
+  {...rest}
+>
+  <slot />
+</a>
