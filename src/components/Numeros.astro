@@ -1,0 +1,38 @@
+---
+import { CountUp } from "./CountUp";
+---
+
+<section class="max-w-5xl mx-auta py-20 px-20">
+  <h2 class="text-4xl text-center text-balance">
+    Los <span class="uppercase">Esland</span> en números
+  </h2><div>
+    <div>
+      <span class="text-9xl font-blod"
+        ><CountUp client:visible initial={0} final={227} /></span
+      >
+      <span>noticias en prensa</span>
+    </div>
+    <div>
+      <span class="text-9xl font-blod"
+        >+<CountUp
+          client:visible
+          initial={0}
+          final={69.9}
+          decimals={1}
+        />M</span
+      >
+      <span>de visualizaciones</span>
+    </div>
+    <div>
+      <span class="text-9xl font-blod"
+        >+<CountUp
+          client:visible
+          initial={0}
+          final={3.2}
+          decimals={1}
+        />M€</span
+      >
+      <span>en medios ganados</span>
+    </div>
+  </div>
+</section>
