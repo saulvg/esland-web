@@ -5,6 +5,7 @@ import Numeros from "../Numeros.astro";
 
 import { getI18N } from "../../i18n";
 import Button from "../Button.astro";
+import Galeria from "../Galeria.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 ---
@@ -17,6 +18,7 @@ const i18n = getI18N({ currentLocale });
     <Button url="https://www.google.com">Revive la ultima gala</Button>
   </HeroContainer>
   <main>
+    <Galeria />
     <Numeros />
   </main>
 </Layout>
